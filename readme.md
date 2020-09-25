@@ -25,5 +25,11 @@ you can set environment variable to use aws-cli in container,
 consider following example:
 
 ```
-docker run -it -e AWS_ACCESS_KEY_ID={your-aws-key} -e AWS_SECRET_ACCESS_KEY={your-aws-secret} -e AWS_DEFAULT_REGION={your-default-region} -v {/source:/dest} -w {/your-workspace} {image-id}
+docker run -it \
+-e AWS_ACCESS_KEY_ID={your-aws-key} \
+-e AWS_SECRET_ACCESS_KEY={your-aws-secret} \
+-e AWS_DEFAULT_REGION={your-default-region} \
+-v {/source:/dest} \
+-w {/your-workspace} \ 
+{image-id} \
 ```
